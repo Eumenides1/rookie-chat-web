@@ -40,7 +40,7 @@ const sessionList = computed(() =>
     return {
       ...item,
       tag: item.hot_Flag === IsAllUserEnum.Yes ? '官方' : '',
-      lastMsg: LastUserMsg || item.text || '欢迎使用MallChat',
+      lastMsg: LastUserMsg || item.text || '欢迎使用RookieChat',
       lastMsgTime: formatTimestamp(item?.activeTime),
     }
   }),
